@@ -1,0 +1,29 @@
+>>> my_dict = {'a':4,'b':3,'c':2,'d':1}
+>>> my_dict
+{'a': 4, 'c': 2, 'b': 3, 'd': 1}
+>>> my_dict.values()
+[4, 2, 3, 1]
+>>> my_dict.keys()
+['a', 'c', 'b', 'd']
+>>> sorted(my_dict.keys())
+['a', 'b', 'c', 'd']
+>>> for i in sorted(my_dict.keys()):
+...   print 'key=%s,value=%d' %(i,my_dict[i])
+... 
+key=a,value=4
+key=b,value=3
+key=c,value=2
+key=d,value=1
+>>> dic = {'a_key':5,'b_key':4,'c_key':3,'d_key':2,'e_key':1}
+>>> dic
+{'e_key': 1, 'b_key': 4, 'a_key': 5, 'd_key': 2, 'c_key': 3}
+>>> k = sorted(dic.iteritems(),key=lambda asd:asd[1],reverse=False)
+>>> for i in range(len(k)):print k[i][0],k[i][1]
+... 
+e_key 1
+d_key 2
+c_key 3
+b_key 4
+a_key 5
+>>> 
+
